@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ClassWorkMay15_IntentApp</string>
+    <string name="textview">My Text View</string>
+</resources>
