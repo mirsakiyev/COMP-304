@@ -11,21 +11,25 @@
     <TextView
         android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Name TextView"/>
 
     <TextView
         android:id="@+id/qualificationTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Qualification TextView"/>
 
     <TextView
         android:id="@+id/dreamjobTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Dream Job TextView"/>
 
     <TextView
-        android:id="@+id/specfiledTextView"
+        android:id="@+id/specfieldTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Specialized Field TextView"/>
 
 </LinearLayout>
