@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AslanMirsakiyev_COMP304_Task2</string>
+    <string name="nameStr">Aslan Mirsakiyev</string>
+    <string name="qualificationStr">Software Developer</string>
+    <string name="dreamjobStr">Android Developer</string>
+    <string name="specfieldStr">Android Development</string>
+</resources>
