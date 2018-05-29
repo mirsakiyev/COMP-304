@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClassWorkMay29_myAdapter</string>
+
+    <string-array name="Flavours">
+        <item>Vanilla</item>
+        <item>Strawberry</item>
+        <item>Chocolate</item>
+        <item>Mango</item>
+    </string-array>
+</resources>
