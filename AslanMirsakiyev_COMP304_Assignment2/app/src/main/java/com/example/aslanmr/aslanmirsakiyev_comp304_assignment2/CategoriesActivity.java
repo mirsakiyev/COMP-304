@@ -13,12 +13,13 @@ public class CategoriesActivity extends AppCompatActivity {
 
     ListView listView;
 
+    //initialize an array with category items
     String[] categoriesItems=new String[]{
                                             "Phones",
                                             "Laptops",
                                             "Smart Watches",
                                             "TVs"
-                                    };
+                                            };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

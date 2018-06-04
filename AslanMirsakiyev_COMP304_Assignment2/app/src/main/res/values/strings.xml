@@ -1,10 +1,4 @@
 <resources>
     <string name="app_name">AslanMirsakiyev_COMP304_Assignment2</string>
 
-    <string-array name="categoriesArray">
-        <item>Phones</item>
-        <item>Laptops</item>
-        <item>Smart Watches</item>
-        <item>TVs</item>
-    </string-array>
 </resources>
