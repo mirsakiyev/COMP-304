@@ -28,6 +28,7 @@ public class CategoriesActivity extends AppCompatActivity {
 
         listView=findViewById(R.id.categoriesListView);
 
+        //initialize an adapter
         ArrayAdapter<String> adapter=new ArrayAdapter<>(this, android.R.layout.simple_list_item_2, android.R.id.text1, categoriesItems);
 
         listView.setAdapter(adapter);
@@ -35,10 +36,13 @@ public class CategoriesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //create a temporary list view
                 String TempListView=categoriesItems[position].toString();
 
+                //initialize intent
                 Intent intent=new Intent(CategoriesActivity.this, BrandsActivity.class);
 
+                //pass a temp list view to an intent
                 intent.putExtra("ListViewClickValue", TempListView);
 
                 startActivity(intent);

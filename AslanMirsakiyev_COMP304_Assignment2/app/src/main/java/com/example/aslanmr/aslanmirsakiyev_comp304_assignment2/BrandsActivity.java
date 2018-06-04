@@ -10,7 +10,6 @@ public class BrandsActivity extends AppCompatActivity {
 
     TextView textView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +22,4 @@ public class BrandsActivity extends AppCompatActivity {
         textView.setText(TempHolder);
 
     }
-
-
-
 }
