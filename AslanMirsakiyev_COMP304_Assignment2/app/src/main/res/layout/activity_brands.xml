@@ -11,9 +11,12 @@
 
     <TextView
         android:text="Now pick a brand"
-        android:layout_marginTop="20dp"
-        android:textSize="30dp"
+        android:id="@+id/testTextView"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

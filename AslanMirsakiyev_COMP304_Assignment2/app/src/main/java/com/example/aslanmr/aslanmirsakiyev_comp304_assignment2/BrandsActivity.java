@@ -83,12 +83,35 @@ public class BrandsActivity extends AppCompatActivity {
                 Intent intent=new Intent(BrandsActivity.this, CheckoutActivity.class);
 
                 startActivity(intent);
-                
+
                 AppleProduct_1_CheckBox=findViewById(R.id.apple1CheckBox);
 
                 if (AppleProduct_1_CheckBox.isChecked())
                 {
+                    String appleProduct_1=AppleProduct_1.getText().toString();
+                    Intent apple_1=new Intent(BrandsActivity.this, CheckoutActivity.class);
 
+                    apple_1.putExtra("appleProduct1",appleProduct_1);
+                    startActivity(apple_1);
+                }
+
+
+                if (AppleProduct_2_CheckBox.isChecked())
+                {
+                    String appleProduct_2=AppleProduct_2.getText().toString();
+                    Intent apple_2=new Intent(BrandsActivity.this, CheckoutActivity.class);
+
+                    apple_2.putExtra("appleProduct2",appleProduct_2);
+                    startActivity(apple_2);
+                }
+
+                if (AppleProduct_3_CheckBox.isChecked())
+                {
+                    String appleProduct_3=AppleProduct_3.getText().toString();
+                    Intent apple_3=new Intent(BrandsActivity.this, CheckoutActivity.class);
+
+                    apple_3.putExtra("appleProduct3",appleProduct_3);
+                    startActivity(apple_3);
                 }
 
             }
@@ -428,7 +451,6 @@ public class BrandsActivity extends AppCompatActivity {
                     // **************************************************************
                 }
             }
-
 
             else
             {

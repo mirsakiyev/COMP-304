@@ -10,8 +10,11 @@
     <TextView
         android:text="Checkout"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
@@ -79,6 +82,7 @@
         <EditText
             android:text="06"
             android:digits="0123456789"
+            android:inputType="number"
             android:maxLength="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -86,6 +90,7 @@
         <EditText
             android:text="25"
             android:digits="0123456789"
+            android:inputType="number"
             android:maxLength="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -110,12 +115,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-    <Button
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
         android:text="Place order"
         android:id="@+id/placeOrderBtn"
         android:onClick="placeOrderBtn_Click"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/goBackBtn"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0000"
+            android:onClick="goBackBtn_Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
