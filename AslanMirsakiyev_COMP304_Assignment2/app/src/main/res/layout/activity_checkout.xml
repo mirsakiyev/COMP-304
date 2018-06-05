@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckoutActivity">
+
+    <TextView
+        android:text="Checkout"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Enter your First Name"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/fNameEdit"
+        android:maxLength="16"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Enter your Last Name"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/lNameEdit"
+        android:maxLength="16"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Enter your Credit/Debit card number"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/cardEditText"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Enter expiration date (MM/YY)"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:text="06"
+            android:digits="0123456789"
+            android:maxLength="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text="25"
+            android:digits="0123456789"
+            android:maxLength="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:text="Enter Security code"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <EditText
+            android:text="###"
+            android:digits="0123456789"
+            android:maxLength="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Place order"
+        android:id="@+id/placeOrderBtn"
+        android:onClick="placeOrderBtn_Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -7,11 +7,6 @@
     android:orientation="vertical"
     tools:context=".BrandsActivity">
 
-    <TextView
-        android:id="@+id/categoryTextView"
-        android:text="Category goes here"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 
     <TextView
@@ -260,12 +255,36 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/showBtn"
-        android:text="Show Products for selected Brands"
-        android:onClick="showBtn_Click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/showBtn"
+            android:text="Show Products for selected Brands"
+            android:onClick="showBtn_Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0000"
+            android:onClick="backBtn_Click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:text="CheckOut"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="checkoutBtn_Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

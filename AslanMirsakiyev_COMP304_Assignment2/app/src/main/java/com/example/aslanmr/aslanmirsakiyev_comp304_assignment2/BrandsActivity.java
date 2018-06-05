@@ -1,5 +1,6 @@
 package com.example.aslanmr.aslanmirsakiyev_comp304_assignment2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -56,6 +57,8 @@ public class BrandsActivity extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,7 +66,33 @@ public class BrandsActivity extends AppCompatActivity {
 
         }
 
+        public void backBtn_Click(View v)
+        {
+            if (v.getId()==R.id.backBtn)
+            {
+                Intent intent=new Intent(BrandsActivity.this, CategoriesActivity.class);
 
+                startActivity(intent);
+            }
+        }
+
+        public void checkoutBtn_Click(View v)
+        {
+            if (v.getId()==R.id.checkoutBtn)
+            {
+                Intent intent=new Intent(BrandsActivity.this, CheckoutActivity.class);
+
+                startActivity(intent);
+                
+                AppleProduct_1_CheckBox=findViewById(R.id.apple1CheckBox);
+
+                if (AppleProduct_1_CheckBox.isChecked())
+                {
+
+                }
+
+            }
+        }
 
     public void showBtn_Click(View v)
     {
@@ -399,8 +428,6 @@ public class BrandsActivity extends AppCompatActivity {
                     // **************************************************************
                 }
             }
-
-
 
 
             else
