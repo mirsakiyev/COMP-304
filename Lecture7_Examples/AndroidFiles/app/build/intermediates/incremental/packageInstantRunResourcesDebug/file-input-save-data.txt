@@ -1,0 +1,18 @@
+#Internal package file, do not edit.
+#Tue Jun 12 09:00:28 EDT 2018
+1.base=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+1.file=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+4.set=ANDROID_RESOURCE
+2.base=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_
+3.set=ANDROID_RESOURCE
+2.set=ANDROID_RESOURCE
+2.file=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+count=5
+1.set=ANDROID_RESOURCE
+3.base=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_
+0.set=ANDROID_RESOURCE
+0.base=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_/res/raw/textfile.txt
+0.file=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/ic_launcher.png
+4.base=/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/res/resources-debug.ap_

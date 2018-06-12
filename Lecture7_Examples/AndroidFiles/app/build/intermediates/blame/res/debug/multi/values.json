@@ -1,0 +1,131 @@
+[
+    {
+        "outputFile": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/C:\\Users\\Akshu\\AndroidStudioProjects\\Files\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 42,
+                    "endOffset": 93
+                },
+                "from": {
+                    "file": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/C:\\Users\\Akshu\\AndroidStudioProjects\\Files\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 122,
+                        "endColumn": 42,
+                        "endOffset": 160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 98,
+                    "endColumn": 61,
+                    "endOffset": 155
+                },
+                "from": {
+                    "file": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/C:\\Users\\Akshu\\AndroidStudioProjects\\Files\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 61,
+                        "endOffset": 116
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/C:\\Users\\Akshu\\AndroidStudioProjects\\AndroidFiles\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 42,
+                    "endOffset": 93
+                },
+                "from": {
+                    "file": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/C:\\Users\\Akshu\\AndroidStudioProjects\\AndroidFiles\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 122,
+                        "endColumn": 42,
+                        "endOffset": 160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 98,
+                    "endColumn": 61,
+                    "endOffset": 155
+                },
+                "from": {
+                    "file": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/C:\\Users\\Akshu\\AndroidStudioProjects\\AndroidFiles\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 61,
+                        "endOffset": 116
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 42,
+                    "endOffset": 93
+                },
+                "from": {
+                    "file": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 122,
+                        "endColumn": 42,
+                        "endOffset": 160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 98,
+                    "endColumn": 61,
+                    "endOffset": 155
+                },
+                "from": {
+                    "file": "/Users/aslanmr/Desktop/Lecture 7 Examples/AndroidFiles/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 61,
+                        "endOffset": 116
+                    }
+                }
+            }
+        ]
+    }
+]
