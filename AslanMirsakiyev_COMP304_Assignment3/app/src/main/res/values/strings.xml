@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AslanMirsakiyev_COMP304_Assignment3</string>
+
+    <string-array name="tasks">
+        <item>Drawing - Task1</item>
+        <item>Framed Animation - Task2</item>
+        <item>Tweened Animation - Task3</item>
+    </string-array>
 </resources>

@@ -1,5 +1,11 @@
 package com.example.aslanmr.aslanmirsakiyev_comp304_assignment3;
 
+/*
+ * Aslan Mirsakiyev
+ * June 17, 2018
+ * Assignment 3 - Drawing - Task 1
+ */
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
