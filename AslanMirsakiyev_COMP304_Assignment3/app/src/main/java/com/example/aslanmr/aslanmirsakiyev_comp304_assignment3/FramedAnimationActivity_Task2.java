@@ -48,7 +48,7 @@ public class FramedAnimationActivity_Task2 extends AppCompatActivity {
 
     private void startAnimation()
     {
-
+        
     }
 
     private void stopAnimation()
