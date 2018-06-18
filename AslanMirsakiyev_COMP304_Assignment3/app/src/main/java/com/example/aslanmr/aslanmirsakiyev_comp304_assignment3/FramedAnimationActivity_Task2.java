@@ -48,7 +48,28 @@ public class FramedAnimationActivity_Task2 extends AppCompatActivity {
 
     private void startAnimation()
     {
-        
+        ImageView img=findViewById(R.id.task2_imgAnimation);
+
+        BitmapDrawable frame1=(BitmapDrawable) getResources().getDrawable(R.drawable.sven_1);
+        BitmapDrawable frame2=(BitmapDrawable) getResources().getDrawable(R.drawable.sven_2);
+        BitmapDrawable frame3=(BitmapDrawable) getResources().getDrawable(R.drawable.sven_3);
+        BitmapDrawable frame4=(BitmapDrawable) getResources().getDrawable(R.drawable.sven_4);
+        BitmapDrawable frame5=(BitmapDrawable) getResources().getDrawable(R.drawable.sven_5);
+
+        // get the background which has been compiled to an AnimDraw object
+        int duration=250;
+        mframeAnimation=new AnimationDrawable();
+        mframeAnimation.setOneShot(false); //loop forever
+        mframeAnimation.addFrame(frame1, duration);
+        mframeAnimation.addFrame(frame2, duration);
+        mframeAnimation.addFrame(frame3, duration);
+        mframeAnimation.addFrame(frame4, duration);
+        mframeAnimation.addFrame(frame5, duration);
+
+        img.setBackground(mframeAnimation);
+
+        mframeAnimation.setVisible(true,true);
+        mframeAnimation.start();
     }
 
     private void stopAnimation()
