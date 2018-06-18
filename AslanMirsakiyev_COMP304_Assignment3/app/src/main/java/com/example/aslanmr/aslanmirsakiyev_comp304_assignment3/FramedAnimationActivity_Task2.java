@@ -2,7 +2,7 @@ package com.example.aslanmr.aslanmirsakiyev_comp304_assignment3;
 
 /*
  * Aslan Mirsakiyev
- * June 17, 2018
+ * June 18, 2018
  * Assignment 3 - Framed Animation - Task 2
  */
 
