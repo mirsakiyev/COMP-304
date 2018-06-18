@@ -2,17 +2,18 @@
     <string name="app_name">AslanMirsakiyev_COMP304_Assignment3</string>
 
     <string-array name="tasks">
-        <item>Drawing - Task1</item>
-        <item>Framed Animation - Task2</item>
-        <item>Tweened Animation - Task3</item>
+        <item>Drawing</item>
+        <item>Framed Animation</item>
+        <item>Tweened Animation</item>
     </string-array>
 
     <string-array name="line_thickness">
+        <item>5</item>
         <item>10</item>
+        <item>15</item>
         <item>20</item>
+        <item>25</item>
         <item>30</item>
-        <item>40</item>
-        <item>50</item>
     </string-array>
 
     <string name="task1_x">x = </string>

@@ -22,6 +22,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
                 android:text="Line Color"/>
             <RadioGroup
                 android:id="@+id/rgrpColors"
@@ -58,6 +60,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
                 android:text="Line thickness"/>
             <Spinner
                 android:id="@+id/task1_spnLineThickness"
@@ -77,6 +81,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
                 android:text="Arrow Keys"/>
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -84,24 +90,28 @@
                 <!-- Arrows -->
                 <ImageButton
                     android:id="@+id/imgArrowUp"
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"/>
                 <ImageButton
                     android:id="@+id/imgArrowLeft"
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"/>
                 <ImageButton
                     android:id="@+id/imgArrowRight"
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"/>
                 <ImageButton
                     android:id="@+id/imgArrowDown"
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
@@ -127,12 +137,16 @@
                 android:id="@+id/task1_tvX"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:backgroundTint="@android:color/holo_green_light"
                 android:text="X = "/>
 
             <TextView
                 android:id="@+id/task1_tvY"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:backgroundTint="@android:color/holo_green_light"
                 android:text="Y = "/>
 
             <Button
@@ -140,6 +154,9 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
                 android:text="Clear"/>
 
         </LinearLayout>

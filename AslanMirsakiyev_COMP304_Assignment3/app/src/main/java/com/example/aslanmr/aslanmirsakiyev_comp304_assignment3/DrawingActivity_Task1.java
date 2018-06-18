@@ -20,6 +20,7 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -32,28 +33,34 @@ import android.widget.TextView;
 
 public class DrawingActivity_Task1 extends AppCompatActivity implements View.OnTouchListener {
 
+
+    // initialize Paint and Bitmap
+    Paint paint;
+    Bitmap bitmap;
+    Canvas canvas;
+
+    // initialize ImageView for canvas and TextView for X and Y
     ImageView imgCanvas;
     TextView tvX;
     TextView tvY;
 
-    final int DRAW_DELAY=50; //delay to draw line in ms
-
-    DirectionEnum currentDirection;
-
-    // coordinates for the line
+    // initialize coordinates for X and Y
     int startX=10;
     int startY=10;
     int endX=10;
     int endY=10;
 
-    // user settings
+    // initialize thickness and color
     int lineThickness;
     int lineColor;
 
-    Paint paint;
-    Bitmap bitmap;
-    Canvas canvas;
+    // initialize a constant delay value(ms) to draw a line
+    final int DRAW_DELAY=25;
 
+    // initialize Enum for current direction
+    DirectionEnum currentDirection;
+
+    // initialize Handler
     private  Handler mHandler;
 
     @Override
@@ -103,25 +110,22 @@ public class DrawingActivity_Task1 extends AppCompatActivity implements View.OnT
 
         // event handlers
 
+        // TODO: [FIXED] "Method does not override method from its superclass"
 
-        // TODO: fix syntax error - "Method does not override method from its superclass"
+        //paint.setStrokeWidth(20); // THIS IS A TEMPORARY LINE OF CODE to set thickness to 20
 
-        paint.setStrokeWidth(20); // THIS IS A TEMPORARY LINE OF CODE to set thickness to 20
-        /*
-        spnLineThickness.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spnLineThickness.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 lineThickness=Integer.parseInt(spnLineThickness.getSelectedItem().toString());
                 paint.setStrokeWidth(lineThickness);
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView){
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
-        */
-
 
         RadioGroup rgrpLineColor=findViewById(R.id.rgrpColors);
         rgrpLineColor.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

@@ -32,8 +32,6 @@ public class TweenedAnimationActivity_Task3 extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
 
 
-        // render images
-
         // Earth - static
         imgEarth=findViewById(R.id.task3_imgEarth);
         imgEarth.setImageResource(R.drawable.earth);
