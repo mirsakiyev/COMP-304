@@ -110,7 +110,8 @@ public class DrawingActivity_Task1 extends AppCompatActivity implements View.OnT
 
         // event handlers
 
-        // TODO: [FIXED] "Method does not override method from its superclass"
+
+        // TODO: [FIXED] - "Method does not override method from its superclass"
 
         //paint.setStrokeWidth(20); // THIS IS A TEMPORARY LINE OF CODE to set thickness to 20
 
@@ -122,9 +123,7 @@ public class DrawingActivity_Task1 extends AppCompatActivity implements View.OnT
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
+            public void onNothingSelected(AdapterView<?> parent) { }
         });
 
         RadioGroup rgrpLineColor=findViewById(R.id.rgrpColors);

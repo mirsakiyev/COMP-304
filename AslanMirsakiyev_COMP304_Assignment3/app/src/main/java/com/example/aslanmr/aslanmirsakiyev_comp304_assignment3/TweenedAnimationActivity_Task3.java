@@ -18,6 +18,7 @@ import android.widget.ImageView;
 
 public class TweenedAnimationActivity_Task3 extends AppCompatActivity {
 
+    // initialize ImageView for moon and earth and Animation
     ImageView imgMoon;
     ImageView imgEarth;
     Animation anim;
@@ -43,7 +44,7 @@ public class TweenedAnimationActivity_Task3 extends AppCompatActivity {
         imgMoon.setVisibility(View.VISIBLE);
 
 
-        // Event handlers
+        // event handlers
 
         Button btnStart=findViewById(R.id.task3_btnStart);
         btnStart.setOnClickListener(new View.OnClickListener() {
