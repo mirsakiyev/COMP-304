@@ -52,6 +52,7 @@ public class TweenedAnimationActivity_Task3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startAnimation();
+                earthSpinAroundItself();
             }
         });
 
@@ -63,6 +64,12 @@ public class TweenedAnimationActivity_Task3 extends AppCompatActivity {
                 stopAnimation();
             }
         });
+    }
+
+    private void earthSpinAroundItself()
+    {
+        anim= AnimationUtils.loadAnimation(this, R.anim.earth_spins_around_itself);
+        imgEarth.startAnimation(anim);
     }
 
     private void startAnimation()
