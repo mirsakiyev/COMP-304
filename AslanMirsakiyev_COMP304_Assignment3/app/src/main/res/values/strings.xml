@@ -6,4 +6,15 @@
         <item>Framed Animation - Task2</item>
         <item>Tweened Animation - Task3</item>
     </string-array>
+
+    <string-array name="line_thickness">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+    <string name="task1_x">x = </string>
+    <string name="task1_y">y = </string>
 </resources>
