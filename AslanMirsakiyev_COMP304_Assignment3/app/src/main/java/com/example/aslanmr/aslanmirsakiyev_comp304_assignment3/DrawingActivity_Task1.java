@@ -40,7 +40,7 @@ public class DrawingActivity_Task1 extends AppCompatActivity implements View.OnT
 
     DirectionEnum currentDirection;
 
-    // coordinates fir the  line
+    // coordinates for the line
     int startX=10;
     int startY=10;
     int endX=10;
@@ -163,7 +163,9 @@ public class DrawingActivity_Task1 extends AppCompatActivity implements View.OnT
 
     }
 
-    private void clearCanvas() { canvas.drawColor(Color.BLACK); }
+    private void clearCanvas() {
+        canvas.drawColor(Color.BLACK);
+    }
 
     private void drawLine(DirectionEnum direction, Canvas canvas) {
         imgCanvas.setFocusable(true);
