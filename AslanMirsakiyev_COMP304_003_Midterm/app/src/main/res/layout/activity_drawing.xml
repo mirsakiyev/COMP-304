@@ -17,6 +17,7 @@
         android:textColor="@color/darkBlue"/>
     
     <ImageView
+        android:id="@+id/graphImgageView"
         android:layout_width="800dp"
         android:layout_height="200dp"
         app:srcCompat="@android:color/black"/>

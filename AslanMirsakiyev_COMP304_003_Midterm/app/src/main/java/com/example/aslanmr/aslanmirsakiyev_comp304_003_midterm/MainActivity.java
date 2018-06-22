@@ -1,5 +1,11 @@
 package com.example.aslanmr.aslanmirsakiyev_comp304_003_midterm;
 
+/*
+ * Aslan Mirsakiyev
+ * Midterm Test
+ * 22 June , 2018
+ */
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
