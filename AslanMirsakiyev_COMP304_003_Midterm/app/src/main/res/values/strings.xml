@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">AslanMirsakiyev_COMP304_003_Midterm</string>
+
+
+    <string name="osMarketShare_drawingActivity_string">Mobile Operating System Market Share Worldwide for: </string>
+
+    <string-array name="operatingSystem">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Windows</item>
+        <item>Other OS</item>
+    </string-array>
+
+
+    <string-array name="androidShares">
+        <item>44</item>
+        <item>60</item>
+        <item>64</item>
+        <item>68</item>
+        <item>78</item>
+        <item>82</item>
+    </string-array>
+
+    <string-array name="iOSshares">
+        <item>32</item>
+        <item>24</item>
+        <item>20</item>
+        <item>18</item>
+        <item>17</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="windowsShares">
+        <item>10</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="otherOsShares">
+        <item>14</item>
+        <item>12</item>
+        <item>11</item>
+        <item>10</item>
+        <item>3</item>
+        <item>1</item>
+    </string-array>
+
 </resources>
