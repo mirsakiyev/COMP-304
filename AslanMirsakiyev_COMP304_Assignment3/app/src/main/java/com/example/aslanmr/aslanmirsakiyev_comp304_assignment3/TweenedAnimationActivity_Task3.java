@@ -38,7 +38,7 @@ public class TweenedAnimationActivity_Task3 extends AppCompatActivity {
         imgEarth.setImageResource(R.drawable.earth);
         imgEarth.setVisibility(View.VISIBLE);
 
-        //Moon - in motion
+        //Moon - in motion 
         imgMoon=findViewById(R.id.task3_imgMoon);
         imgMoon.setImageResource(R.drawable.moon);
         imgMoon.setVisibility(View.VISIBLE);
