@@ -5,11 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="20dp"
     tools:context=".Order">
 
     <TextView
-        android:id="@+id/userLoginTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Now you may place your orders"/>
+
+    <TextView
+        android:id="@+id/order_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"/>
+
+    <TextView
+        android:id="@+id/order_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"/>
+
+    <TextView
+        android:id="@+id/order_fName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"/>
+
+    <TextView
+        android:id="@+id/order_lName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"/>
+
+
 
 </LinearLayout>

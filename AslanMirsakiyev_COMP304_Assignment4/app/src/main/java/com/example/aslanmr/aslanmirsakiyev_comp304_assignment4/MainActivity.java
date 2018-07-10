@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor =sharePref.edit();
         usernameInput=findViewById(R.id.usernameEditText);
         editor.putString("userName",usernameInput.getText().toString());
+        //editor.putString()
         editor.apply();
         Toast.makeText(this,"Saved",Toast.LENGTH_LONG).show();
 

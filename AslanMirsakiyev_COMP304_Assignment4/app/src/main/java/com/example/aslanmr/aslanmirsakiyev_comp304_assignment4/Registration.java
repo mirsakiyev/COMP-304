@@ -19,10 +19,10 @@ import android.widget.Toast;
 
 public class Registration extends AppCompatActivity {
 
-    DBHelper shoppingDB;
-    EditText txtCustomerId,txtName,txtPassword, txtFirstName, txtLastName,txtAddress,txtPostalCode,txtCity;
-    Button register;
     int id;
+    DBHelper shoppingDB;
+    Button register;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,17 @@ public class Registration extends AppCompatActivity {
         try {
             shoppingDB = new DBHelper(getApplicationContext());
             //db.createDatabase(getApplicationContext());
-            shoppingDB.dbInit("Customer", "CREATE TABLE Customer (id INTEGER PRIMARY KEY ,username TEXT ," +
-                    "password TEXT,  fName TEXT,  lName TEXT,  address TEXT,  postalCode TEXT);");
+            shoppingDB.dbInit("Customer", "CREATE TABLE Customer (id INTEGER PRIMARY KEY ," +
+                    "username TEXT ," +
+                    "password TEXT,  " +
+                    "fName TEXT, " +
+                    "lName TEXT, " +
+                    "address TEXT, " +
+                    "postalcode TEXT);");
 
         }catch(Exception e)
         {
-            Log.d("Customer", e.getMessage()+"");
+            Log.d("Error: ", e.getMessage()+"");
         }
 
         register=findViewById(R.id.newregBtn);
@@ -46,12 +51,11 @@ public class Registration extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
+                String txtName,txtPassword, txtFirstName, txtLastName,txtAddress,txtPostalCode;
 
-                String txtName,txtPassword, txtFirstName, txtLastName,txtAddress,txtPostalCode,txtCity;
                 int txtCustomerId=Integer.parseInt(((EditText)findViewById(R.id.editCustomerID)).getText().toString());
                 txtName=((EditText)findViewById(R.id.editUsername)).getText().toString();
                 txtPassword=((EditText)findViewById(R.id.editPassword)).getText().toString();
-
                 txtFirstName=((EditText)findViewById(R.id.editFName)).getText().toString();
                 txtLastName=((EditText)findViewById(R.id.editLName)).getText().toString();
                 txtAddress=((EditText)findViewById(R.id.editAddress)).getText().toString();
@@ -60,36 +64,32 @@ public class Registration extends AppCompatActivity {
                 DBHelper db = new DBHelper(getApplicationContext());
                 ContentValues values = new ContentValues();
 
+                // Insert Values
                 values.put("id",txtCustomerId);
                 values.put("username",txtName);
                 values.put("password",txtPassword);
-                String message="Success";
+                values.put("fName",txtFirstName);
+                values.put("lName",txtLastName);
+                values.put("address",txtAddress);
+                values.put("postalcode",txtPostalCode);
+
+                String message="You have successfully registered!!!";
 
                 try {
                     db.addRow(values);
-                    // finish();
-                    Log.d("success","Success");
+                    Log.d("success"," You have successfully registered!!!");
                     Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
+
+                    // Display user credentials
+                    Customer customer = shoppingDB.getCustomerById(Integer.parseInt(((EditText)findViewById(R.id.editCustomerID)).getText().toString()), "id");
+                    ((TextView)findViewById(R.id.resultTextView)).setText(customer.username.toString()+" "+customer.password.toString());
+
                 }
                 catch (Exception e)
                 {
-                    Log.d("Customer",e.getMessage());
+                    Log.d("Error: ",e.getMessage());
                 }
 
-            }
-        });
-        findViewById(R.id.view).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Customer customer = shoppingDB.getCustomerById(Integer.parseInt(((EditText)findViewById(R.id.editCustomerID)).getText().toString()), "id");
-
-                    ((TextView)findViewById(R.id.result)).setText(customer.username.toString()+" "+customer.password.toString());
-                }
-                catch(Exception e)
-                {
-                    Log.d("Customer",e.getMessage());
-                }
             }
         });
     }

@@ -10,11 +10,11 @@ package com.example.aslanmr.aslanmirsakiyev_comp304_assignment4;
 public class Customer {
 
     int id;
-    String username,  password,  fName,  lName,  address,  postalCode,  city;
+    String username,  password,  fName,  lName,  address,  postalCode;
 
     public Customer() {
     }
-    public Customer(int id, String username, String password, String fName, String lName, String address, String postalCode, String city)
+    public Customer(int id, String username, String password, String fName, String lName, String address, String postalCode)
     {
         this.id=id;
         this.username=username;
@@ -23,7 +23,6 @@ public class Customer {
         this.lName=lName;
         this.address=address;
         this.postalCode=postalCode;
-        this.city=city;
 
     }
 
@@ -68,11 +67,5 @@ public class Customer {
     }
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
-    }
-    public String getCity() {
-        return city;
-    }
-    public void setCity(String city) {
-        this.city = city;
     }
 }
