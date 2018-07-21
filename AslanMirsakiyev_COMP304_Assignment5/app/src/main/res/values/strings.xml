@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AslanMirsakiyev_COMP304_Assignment5</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="brands">
+        <item>Mercedes</item>
+        <item>BMW</item>
+        <item>Honda</item>
+        <item>Lexus</item>
+    </string-array>
+
+    <string-array name="mercedes_showrooms">
+        <item>Mercedes showroom 1</item>
+        <item>Mercedes showroom 2</item>
+        <item>Mercedes showroom 3</item>
+    </string-array>
+
+    <string-array name="bmw_showrooms">
+        <item>BMW showroom 1</item>
+        <item>BMW showroom 2</item>
+        <item>BMW showroom 3</item>
+    </string-array>
+
+    <string-array name="honda_showrooms">
+        <item>Honda showroom 1</item>
+        <item>Honda showroom 2</item>
+        <item>Honda showroom 3</item>
+    </string-array>
+
+    <string-array name="lexus_showrooms">
+        <item>Lexus showroom 1</item>
+        <item>Lexus showroom 2</item>
+        <item>Lexus showroom 3</item>
+    </string-array>
+
+
+</resources>
