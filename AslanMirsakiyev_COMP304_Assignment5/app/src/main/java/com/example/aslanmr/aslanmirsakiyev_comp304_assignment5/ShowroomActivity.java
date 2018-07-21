@@ -1,5 +1,11 @@
 package com.example.aslanmr.aslanmirsakiyev_comp304_assignment5;
 
+/*
+ * Assignment 5
+ * Aslan Mirsakiyev
+ * 20 of July 2018
+ */
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -41,19 +47,19 @@ public class ShowroomActivity extends ListActivity {
                         switch (position){
                             case 0:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Mercedes_Location1");
+                                intent.putExtra("showroom","Mercedes_Location1");
                                 startActivity(intent);
                                 break;
 
                             case 1:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Mercedes_Location2");
+                                intent.putExtra("showroom","Mercedes_Location2");
                                 startActivity(intent);
                                 break;
 
                             case 2:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Mercedes_Location3");
+                                intent.putExtra("showroom","Mercedes_Location3");
                                 startActivity(intent);
                                 break;
 
@@ -61,7 +67,6 @@ public class ShowroomActivity extends ListActivity {
                     }
                 });
                 break;
-
 
 
 
@@ -79,19 +84,19 @@ public class ShowroomActivity extends ListActivity {
                         switch (position){
                             case 0:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","BMW_Location1");
+                                intent.putExtra("showroom","BMW_Location1");
                                 startActivity(intent);
                                 break;
 
                             case 1:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","BMW_Location2");
+                                intent.putExtra("showroom","BMW_Location2");
                                 startActivity(intent);
                                 break;
 
                             case 2:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","BMW_Location3");
+                                intent.putExtra("showroom","BMW_Location3");
                                 startActivity(intent);
                                 break;
 
@@ -113,19 +118,19 @@ public class ShowroomActivity extends ListActivity {
                         switch (position){
                             case 0:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Honda_Location1");
+                                intent.putExtra("showroom","Honda_Location1");
                                 startActivity(intent);
                                 break;
 
                             case 1:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Honda_Location2");
+                                intent.putExtra("showroom","Honda_Location2");
                                 startActivity(intent);
                                 break;
 
                             case 2:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Honda_Location3");
+                                intent.putExtra("showroom","Honda_Location3");
                                 startActivity(intent);
                                 break;
 
@@ -152,19 +157,19 @@ public class ShowroomActivity extends ListActivity {
                         switch (position){
                             case 0:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Lexus_Location1");
+                                intent.putExtra("showroom","Lexus_Location1");
                                 startActivity(intent);
                                 break;
 
                             case 1:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Lexus_Location2");
+                                intent.putExtra("showroom","Lexus_Location2");
                                 startActivity(intent);
                                 break;
 
                             case 2:
                                 intent = new Intent(ShowroomActivity.this, MapsActivity.class);
-                                intent.putExtra("name","Lexus_Location3");
+                                intent.putExtra("showroom","Lexus_Location3");
                                 startActivity(intent);
                                 break;
 

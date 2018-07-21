@@ -1,5 +1,11 @@
 package com.example.aslanmr.aslanmirsakiyev_comp304_assignment5;
 
+/*
+ * Assignment 5
+ * Aslan Mirsakiyev
+ * 20 of July 2018
+ */
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
