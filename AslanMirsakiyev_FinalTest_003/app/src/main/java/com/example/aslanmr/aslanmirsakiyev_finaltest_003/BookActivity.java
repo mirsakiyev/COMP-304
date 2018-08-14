@@ -1,9 +1,12 @@
 package com.example.aslanmr.aslanmirsakiyev_finaltest_003;
 
+import android.content.ContentValues;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,10 +16,13 @@ public class BookActivity extends AppCompatActivity {
     private BookManager bookManager;
 
     // Initialize Buttons objects
-    private Button newBooks, showBookDetails, buyBookBtn;
+    private Button newBooksBtn, showBookDetailsBtn, buyBookBtn;
 
     // Initialize TextView objects
-    private TextView bookName, authorName, priceName;
+    private TextView bookNameTxt, authorNameTxt, priceNameTxt;
+
+    // Initialize TextView objects
+    private Spinner bookISBNspn;
 
     // Initialize table name
     private final static String TABLE_NAME = "Books";
@@ -31,13 +37,15 @@ public class BookActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book);
 
 
-        newBooks=findViewById(R.id.newBooksBtn);
-        showBookDetails=findViewById(R.id.showBookDetailsBtn);
+        newBooksBtn=findViewById(R.id.newBooksBtn);
+        showBookDetailsBtn=findViewById(R.id.showBookDetailsBtn);
         buyBookBtn=findViewById(R.id.buyBookBtn);
-        
-        bookName=findViewById(R.id.bookNameTextView);
-        authorName=findViewById(R.id.authorNameTextView);
-        priceName=findViewById(R.id.priceNameTextView);
+
+        bookNameTxt=findViewById(R.id.bookNameTextView);
+        authorNameTxt=findViewById(R.id.authorNameTextView);
+        priceNameTxt=findViewById(R.id.priceNameTextView);
+
+        bookISBNspn=findViewById(R.id.spinnerISBN);
 
 
         // Initialize the table using dbInitialize method of BookManager
@@ -52,10 +60,46 @@ public class BookActivity extends AppCompatActivity {
             Log.i("Error Message: ",exception.getMessage());
         }
 
+        newBooksBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AddNewBook(v);
+            }
+        });
+    }
 
 
 
+    //--------------------------------------------------------------------------------------------------------------
+    // Methods
+    //--------------------------------------------------------------------------------------------------------------
 
+    // This AddNewBook methods populates(hardcoded) Books table with values the values when newBooksBtn is clicked
+    public void AddNewBook(View v)
+    {
+        // Row 1
+        String newISBN_Entry_1="9780134";
+        String bookName_Entry_1="Unknown Place";
+        String authorName_Entry_1="Michael Richards";
+        double price_Entry_1=39.99;
+        //
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("bookISBN",newISBN_Entry_1);
+        contentValues.put("bookName",bookName_Entry_1);
+        contentValues.put("authorName",authorName_Entry_1);
+        contentValues.put("price",price_Entry_1);
+
+        try
+        {
+            bookManager.addRecord(contentValues);
+        }
+        catch(Exception exception)
+        {
+            Toast.makeText(BookActivity.this,
+                    exception.getMessage(), Toast.LENGTH_SHORT).show();
+            Log.i("Error Message: ",exception.getMessage());
+        }
 
     }
+
 }
