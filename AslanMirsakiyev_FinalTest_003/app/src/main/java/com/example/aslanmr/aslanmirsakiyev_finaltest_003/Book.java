@@ -1,5 +1,12 @@
 package com.example.aslanmr.aslanmirsakiyev_finaltest_003;
 
+/* Final Test
+ * Aug 14, 2018
+ * Aslan Mirsakiyev
+ * #300850326
+ * Submitted to: Vinay Vaithilingam
+ */
+
 public class Book {
 
 
